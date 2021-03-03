@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 一、转换为字符串类型
+        var a = 10;
+        // 1. toString()
+        var A = a.toString();
+        console.log(typeof A);
+        // 2. String()
+        console.log(typeof String(A));
+        // 3. 加号拼接空字符串（隐式转换）
+        console.log('' + a);
+
+
+        // 二、转换为数字类型
+        var b = '10';
+        // 1. parseInt
+        console.log(parseInt(b));
+        // 2. parseFloat
+        var c = '10.001654';
+        console.log(parseFloat(c));
+        // 3. Number()
+        console.log(Number(c));
+        // 4. 数学运算 - / * （隐式转换）
+        console.log('13' - 0);
+
+
+        // 三、转换为布尔型
+        // Boolean()函数
+        // 空、否定的值转换为false，其他的全部转换为true
+        console.log(Boolean(''));
+        console.log(Boolean(0));
+        console.log(Boolean(NaN));
+        console.log(Boolean(null));
+        console.log(Boolean(undefined));
+        console.log(Boolean('哈哈'));
+        console.log(Boolean(123));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
