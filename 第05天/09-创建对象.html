@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.使用字面量创建对象
+        var obj = {
+            username: 'liuli',
+            age: 19,
+            sex: '男',
+            sayHi: function() {
+                console.log('Hi');
+            }
+        };
+        // 调用对象的属性
+        console.log(obj.username);
+        console.log(obj['age']);
+        obj.sayHi();
+
+        // 2.使用new Object创建对象
+        var obj2 = new Object();
+        obj2.uname = '张三丰';
+        obj2.uage = '112';
+        obj2.sayHi = function() {
+            console.log('hi');
+        }
+        console.log(obj2.uname);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // retrun 把结果直接返回给函数的调用者 函数名() = return 结果
+        function getResult() {
+            return 666;
+        }
+        console.log(getResult());
+
+        function cook(str) {
+            return str;
+        }
+        console.log(cook('大肘子'));
+
+        function getSum(num1, num2) {
+            return num1 + num2;
+        }
+        console.log(getSum(1, 2));
+
+        // 求两个数的最大值
+        function getMax(num1, num2) {
+            // if (num1 > num2) {
+            //     return num1;
+            // } else {
+            //     return num2;
+            // }
+            return num1 > num2 ? num1 : num2;
+        }
+        console.log(getMax(48, 191));
+        // 求数组中的最大值
+        function getArrMax(arr) {
+            var max = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        var re = getArrMax([13, 1331, 234, 444, 179, 111110])
+        console.log(re);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

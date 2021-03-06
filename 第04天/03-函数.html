@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 函数就是封装了一段可以被重复执行的代码块
+        // function 声明函数的关键词
+        // 函数名一般是动词
+        // 函数不调用，自己不执行
+        // 调用函数的方式：函数名()
+        function getSum(num1, num2) {
+            var sum = 0;
+            for (var i = num1; i <= num2; i++) {
+                sum += i;
+            }
+            console.log(sum);
+        }
+        getSum(1, 1000)
+        getSum(1, 10)
+        getSum(1, 100)
+
+        function sayHi() {
+            console.log('Hi');
+        }
+        sayHi()
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function 函数名(形参1, 形参2, 形参3) {
+        // }
+        // 函数名(实参1, 实参2, 实参3)
+
+        function getSum(num1, num2) {
+            sum = num1 + num2
+            console.log(sum);
+        }
+        getSum(11, 12);
+        // 如果实参的个数多于形参的个数 会取形参的个数
+        getSum(11, 12, 13);
+        // 如果实参的个数少于形参的个数 结果会NaN
+        getSum(11);
+    </script>
+</head>
+
+<body>
+    <img src="../课程总结/形参与实参.png" alt="">
+    <img src="../课程总结/不匹配.png" alt="">
+</body>
+
+</html>

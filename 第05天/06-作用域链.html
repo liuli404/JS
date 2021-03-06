@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 作用域链
+        var num = 10;
+
+        function n1() { //外部函数
+            var num = 20;
+            n2();
+
+            function n2() { //内部函数
+                console.log(num);
+            }
+        }
+        n1();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

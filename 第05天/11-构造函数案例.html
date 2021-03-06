@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 创建
+        function Hero(name, type, blood) {
+            this.name = name;
+            this.type = type;
+            this.blood = blood;
+            this.attack = function(style) {
+                console.log(style);
+            }
+        };
+        // 定义
+        var houyi = new Hero('后羿', '射手型', 100);
+        var lianpo = new Hero('廉颇', '力量型', 500);
+        // 调用
+        console.log(houyi.name);
+        console.log(houyi.type);
+        console.log(houyi.blood);
+        houyi.attack('远程');
+
+        console.log(lianpo.name);
+        console.log(lianpo.type);
+        console.log(lianpo.blood);
+        lianpo.attack('近战');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
