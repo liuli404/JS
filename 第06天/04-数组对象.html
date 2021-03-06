@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 追加数组元素
+        var arr = [1, 2, 3, 4];
+
+        arr.push(5, 6) //后面追加
+        console.log(arr);
+
+        arr.unshift(-1, 0); //前面追加
+        console.log(arr);
+
+        // 删除数组元素
+        var arr2 = [1, 2, 3, 4]
+
+        arr2.pop(); //删除最后一个元素
+        console.log(arr2);
+
+        arr2.shift();
+        console.log(arr2); //删除第一个元素
+
+        // 筛选数组
+        var arr3 = [14, 65, 78, 115, 204, 1024, 15, 348, 6, 0]
+        var newArr3 = [];
+        for (var i = 0; i < arr3.length; i++) {
+            if (arr3[i] < 1000) {
+                newArr3.push(arr3[i])
+            }
+        }
+        console.log(newArr3);
+
+        // 反转数组
+        var arr4 = [1, 2, 3, 4, 5, 6];
+        arr4.reverse()
+        console.log(arr4);
+
+        // 数组排序
+        var arr5 = [46, 48, 15, 20, 11, 201]
+        arr5.sort(function(a, b) {
+            return a - b; //升序排序
+            return b - a; //降序排序
+        })
+        console.log(arr5);
+
+        // 返回数组索引号
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
