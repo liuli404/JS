@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        div,
+        p {
+            margin: 20px;
+            padding: 15px;
+            height: 30px;
+            width: 250px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <button>获取当前时间</button>
+    <div>123</div>
+    <p>456</p>
+
+    <script>
+        // 1.element.innerText
+        // 不识别html标签，去除空格和换行
+        // 2.element.innerHTML
+        // 识别html标签，保留空和换行
+
+        // 1.获取元素
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        var p = document.querySelector('p');
+        // 2.注册事件
+        //  btn.onclick
+        //  div.innerText
+        //  p.innerText
+        // 3.程序运行
+        btn.onclick = function() {
+            div.innerText = getDate();
+        };
+        // 不用添加事件
+        p.innerText = getDate();
+
+
+        // 获取当前日期函数
+        function getDate() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var dates = date.getDate();
+            var day = date.getDay();
+            var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+            return '现在是: ' + year + '年 ' + month + '月 ' + dates + '日 ' + arr[day];
+        }
+    </script>
+</body>
+
+</html>
