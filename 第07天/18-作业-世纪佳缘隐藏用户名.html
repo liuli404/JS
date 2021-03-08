@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .inpt {
+            height: 20px;
+            width: 180px;
+            margin: 100px auto;
+            color: #ccc;
+            outline-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <input class="inpt" type="text" value="手机号">
+    <script>
+        var inpt = document.querySelector('.inpt');
+
+        inpt.onfocus = function() {
+            if (inpt.value === '手机号') {
+                this.value = '';
+            }
+            this.style.color = '#ccc';
+        }
+        inpt.onblur = function() {
+            if (inpt.value === '') {
+                inpt.value = '手机号';
+            }
+            this.style.color = '#ccc';
+        }
+    </script>
+</body>
+
+</html>

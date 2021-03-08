@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: pink;
+        }
+        
+        .change {
+            width: 300px;
+            height: 300px;
+            margin-top: 400px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>文字</p>
+    </div>
+    <script>
+        var box = document.querySelector('.box');
+        box.onclick = function() {
+            // 让我们当前元素的类名改为了 change box
+            this.className = 'change box';
+        }
+    </script>
+</body>
+
+</html>

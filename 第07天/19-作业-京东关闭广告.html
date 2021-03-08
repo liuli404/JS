@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .head {
+            background-color: rgb(78, 215, 189);
+            /* display: none; */
+        }
+        
+        .w {
+            width: 1200px;
+        }
+        
+        .ad {
+            position: relative;
+            height: 80px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: skyblue;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 18px;
+            height: 18px;
+            font-style: normal;
+            border: 1px solid #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="w ad">
+            <p style="line-height: 80px;">广告</p>
+            <i class="close-btn">×</i>
+        </div>
+    </div>
+    <script>
+        var header = document.querySelector('.head');
+        var close_btn = document.querySelector('.close-btn');
+        close_btn.onclick = function() {
+            header.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
