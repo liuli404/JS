@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- node.cloneNode(false) 为空或 false 浅拷贝，只拷贝标签 不拷贝内容 -->
+<!-- node.cloneNode(true) 为 true 深拷贝，标签内容一起拷贝 -->
+
+<body>
+    <ul>
+        <li>11111</li>
+        <li>122222</li>
+        <li>13</li>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul');
+        // 1.克隆元素
+        var lili = ul.children[1].cloneNode(true);
+        // 2.追加元素
+        ul.appendChild(lili);
+    </script>
+</body>
+
+</html>

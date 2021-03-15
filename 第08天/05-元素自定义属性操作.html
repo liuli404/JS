@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="test" class="nav" data-index="123"></div>
+    <script>
+        var div = document.getElementById('test');
+        // 1.获取属性值  getAttribute
+        // 默认的方式只能获取元素的基本属性
+        console.log(div.id);
+        // getAttribute 可以获得自定义的属性值
+        console.log(div.getAttribute('data-index'));
+
+        // 2.修改属性值  setAttribute
+        div.id = 'test1';
+        div.className = 'navs';
+        // Element.setAttribute('属性','值')
+        div.setAttribute('id', 'test4456'); // 修改id属性值
+        div.setAttribute('data-index', '456'); // 修改自定义属性值
+        div.setAttribute('class', 'header'); // 修改class类属性值
+
+        // 3.移除属性值  removeAttribute
+        div.removeAttribute('data-index');
+    </script>
+</body>
+
+</html>
